@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let dictonary = Bundle.main.infoDictionary?["EnviromentSetting"]
+        let environment: [String:AnyObject]? = dictonary as? [String:AnyObject]
+        let baseURL = environment?["BASE_URL"] as! String//TODO: Remove force unwrap if possible
+        
+        print(baseURL)
+        
         return true
     }
 
