@@ -13,6 +13,14 @@
 		39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CD81E414AE900056A24 /* Assets.xcassets */; };
 		39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */; };
 		39DE5CE71E414AE900056A24 /* iOSMVPTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */; };
+		652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */; };
+		652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */; };
+		652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */; };
+		652C366B1E8DC8FF00A32FF4 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36691E8DC8FF00A32FF4 /* GenericTableViewController.swift */; };
+		652C366E1E8DCB5600A32FF4 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C366D1E8DCB5600A32FF4 /* Loading.swift */; };
+		652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C366F1E8DCB8100A32FF4 /* Loading.storyboard */; };
+		652C36721E8DCF4C00A32FF4 /* GenericTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36711E8DCF4C00A32FF4 /* GenericTableViewController.xib */; };
+		652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36731E8DD13E00A32FF4 /* CellApresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +34,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39DE5CCE1E414AE900056A24 /* iOSMVPTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMVPTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DE5CCE1E414AE900056A24 /* Cthullu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cthullu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE5CD11E414AE900056A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39DE5CD31E414AE900056A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39DE5CD61E414AE900056A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39DE5CD81E414AE900056A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39DE5CDB1E414AE900056A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39DE5CDD1E414AE900056A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39DE5CE21E414AE900056A24 /* iOSMVPTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMVPTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DE5CE21E414AE900056A24 /* CthulluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CthulluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMVPTemplateTests.swift; sourceTree = "<group>"; };
 		39DE5CE81E414AE900056A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelaTableViewCell.xib; sourceTree = "<group>"; };
+		652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaTableViewCell.swift; sourceTree = "<group>"; };
+		652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTablePresenter.swift; sourceTree = "<group>"; };
+		652C36691E8DC8FF00A32FF4 /* GenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		652C366D1E8DCB5600A32FF4 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		652C366F1E8DCB8100A32FF4 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
+		652C36711E8DCF4C00A32FF4 /* GenericTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewController.xib; sourceTree = "<group>"; };
+		652C36731E8DD13E00A32FF4 /* CellApresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellApresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +75,7 @@
 		39DE5CC51E414AE800056A24 = {
 			isa = PBXGroup;
 			children = (
-				39DE5CD01E414AE900056A24 /* iOSMVPTemplate */,
+				39DE5CD01E414AE900056A24 /* Cthullu */,
 				39DE5CE51E414AE900056A24 /* iOSMVPTemplateTests */,
 				39DE5CCF1E414AE900056A24 /* Products */,
 			);
@@ -68,22 +84,23 @@
 		39DE5CCF1E414AE900056A24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39DE5CCE1E414AE900056A24 /* iOSMVPTemplate.app */,
-				39DE5CE21E414AE900056A24 /* iOSMVPTemplateTests.xctest */,
+				39DE5CCE1E414AE900056A24 /* Cthullu.app */,
+				39DE5CE21E414AE900056A24 /* CthulluTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		39DE5CD01E414AE900056A24 /* iOSMVPTemplate */ = {
+		39DE5CD01E414AE900056A24 /* Cthullu */ = {
 			isa = PBXGroup;
 			children = (
+				652C365E1E8DBAFA00A32FF4 /* Resources */,
 				39DE5CD11E414AE900056A24 /* AppDelegate.swift */,
-				39DE5CD31E414AE900056A24 /* ViewController.swift */,
 				39DE5CD51E414AE900056A24 /* Main.storyboard */,
 				39DE5CD81E414AE900056A24 /* Assets.xcassets */,
 				39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */,
 				39DE5CDD1E414AE900056A24 /* Info.plist */,
 			);
+			name = Cthullu;
 			path = iOSMVPTemplate;
 			sourceTree = "<group>";
 		};
@@ -96,12 +113,76 @@
 			path = iOSMVPTemplateTests;
 			sourceTree = "<group>";
 		};
+		652C365E1E8DBAFA00A32FF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39DE5CD31E414AE900056A24 /* ViewController.swift */,
+				652C36671E8DC7F800A32FF4 /* Util */,
+				652C36661E8DC7CE00A32FF4 /* GenericTableViewController */,
+				652C365F1E8DBB1900A32FF4 /* View */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		652C365F1E8DBB1900A32FF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				652C366C1E8DCB3E00A32FF4 /* Loading */,
+				652C36601E8DBB2200A32FF4 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		652C36601E8DBB2200A32FF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				652C36651E8DBBF400A32FF4 /* FreelaTableViewCell */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		652C36651E8DBBF400A32FF4 /* FreelaTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */,
+				652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */,
+			);
+			name = FreelaTableViewCell;
+			sourceTree = "<group>";
+		};
+		652C36661E8DC7CE00A32FF4 /* GenericTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */,
+				652C36691E8DC8FF00A32FF4 /* GenericTableViewController.swift */,
+				652C36711E8DCF4C00A32FF4 /* GenericTableViewController.xib */,
+				652C36731E8DD13E00A32FF4 /* CellApresentable.swift */,
+			);
+			name = GenericTableViewController;
+			sourceTree = "<group>";
+		};
+		652C36671E8DC7F800A32FF4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		652C366C1E8DCB3E00A32FF4 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				652C366D1E8DCB5600A32FF4 /* Loading.swift */,
+				652C366F1E8DCB8100A32FF4 /* Loading.storyboard */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		39DE5CCD1E414AE800056A24 /* iOSMVPTemplate */ = {
+		39DE5CCD1E414AE800056A24 /* Cthullu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39DE5CEB1E414AE900056A24 /* Build configuration list for PBXNativeTarget "iOSMVPTemplate" */;
+			buildConfigurationList = 39DE5CEB1E414AE900056A24 /* Build configuration list for PBXNativeTarget "Cthullu" */;
 			buildPhases = (
 				39DE5CCA1E414AE800056A24 /* Sources */,
 				39DE5CCB1E414AE800056A24 /* Frameworks */,
@@ -111,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = iOSMVPTemplate;
+			name = Cthullu;
 			productName = iOSMVPTemplate;
-			productReference = 39DE5CCE1E414AE900056A24 /* iOSMVPTemplate.app */;
+			productReference = 39DE5CCE1E414AE900056A24 /* Cthullu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		39DE5CE11E414AE900056A24 /* iOSMVPTemplateTests */ = {
+		39DE5CE11E414AE900056A24 /* CthulluTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39DE5CEE1E414AE900056A24 /* Build configuration list for PBXNativeTarget "iOSMVPTemplateTests" */;
+			buildConfigurationList = 39DE5CEE1E414AE900056A24 /* Build configuration list for PBXNativeTarget "CthulluTests" */;
 			buildPhases = (
 				39DE5CDE1E414AE900056A24 /* Sources */,
 				39DE5CDF1E414AE900056A24 /* Frameworks */,
@@ -129,9 +210,9 @@
 			dependencies = (
 				39DE5CE41E414AE900056A24 /* PBXTargetDependency */,
 			);
-			name = iOSMVPTemplateTests;
+			name = CthulluTests;
 			productName = iOSMVPTemplateTests;
-			productReference = 39DE5CE21E414AE900056A24 /* iOSMVPTemplateTests.xctest */;
+			productReference = 39DE5CE21E414AE900056A24 /* CthulluTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -146,6 +227,7 @@
 				TargetAttributes = {
 					39DE5CCD1E414AE800056A24 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 23GBM6X229;
 						ProvisioningStyle = Automatic;
 					};
 					39DE5CE11E414AE900056A24 = {
@@ -155,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39DE5CC91E414AE800056A24 /* Build configuration list for PBXProject "iOSMVPTemplate" */;
+			buildConfigurationList = 39DE5CC91E414AE800056A24 /* Build configuration list for PBXProject "Cthullu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,8 +250,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39DE5CCD1E414AE800056A24 /* iOSMVPTemplate */,
-				39DE5CE11E414AE900056A24 /* iOSMVPTemplateTests */,
+				39DE5CCD1E414AE800056A24 /* Cthullu */,
+				39DE5CE11E414AE900056A24 /* CthulluTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,7 +263,10 @@
 			files = (
 				39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */,
 				39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */,
+				652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */,
+				652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */,
 				39DE5CD71E414AE900056A24 /* Main.storyboard in Resources */,
+				652C36721E8DCF4C00A32FF4 /* GenericTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652C366B1E8DC8FF00A32FF4 /* GenericTableViewController.swift in Sources */,
+				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
+				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
 				39DE5CD41E414AE900056A24 /* ViewController.swift in Sources */,
 				39DE5CD21E414AE900056A24 /* AppDelegate.swift in Sources */,
+				652C366E1E8DCB5600A32FF4 /* Loading.swift in Sources */,
+				652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +307,7 @@
 /* Begin PBXTargetDependency section */
 		39DE5CE41E414AE900056A24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 39DE5CCD1E414AE800056A24 /* iOSMVPTemplate */;
+			target = 39DE5CCD1E414AE800056A24 /* Cthullu */;
 			targetProxy = 39DE5CE31E414AE900056A24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,9 +430,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://debug.com.br";
+				DEVELOPMENT_TEAM = 23GBM6X229;
 				INFOPLIST_FILE = iOSMVPTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -353,9 +445,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://prod.com.br";
+				DEVELOPMENT_TEAM = 23GBM6X229;
 				INFOPLIST_FILE = iOSMVPTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -371,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMVPTemplate.app/iOSMVPTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cthullu.app/Cthullu";
 			};
 			name = Debug;
 		};
@@ -385,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMVPTemplate.app/iOSMVPTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cthullu.app/Cthullu";
 			};
 			name = Release;
 		};
@@ -444,9 +538,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://homolog.com.br";
+				DEVELOPMENT_TEAM = 23GBM6X229;
 				INFOPLIST_FILE = iOSMVPTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -462,14 +558,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.g2m.iOSMVPTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMVPTemplate.app/iOSMVPTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cthullu.app/Cthullu";
 			};
 			name = Homolog;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39DE5CC91E414AE800056A24 /* Build configuration list for PBXProject "iOSMVPTemplate" */ = {
+		39DE5CC91E414AE800056A24 /* Build configuration list for PBXProject "Cthullu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39DE5CE91E414AE900056A24 /* Debug */,
@@ -479,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39DE5CEB1E414AE900056A24 /* Build configuration list for PBXNativeTarget "iOSMVPTemplate" */ = {
+		39DE5CEB1E414AE900056A24 /* Build configuration list for PBXNativeTarget "Cthullu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39DE5CEC1E414AE900056A24 /* Debug */,
@@ -487,8 +583,9 @@
 				39DE5CED1E414AE900056A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		39DE5CEE1E414AE900056A24 /* Build configuration list for PBXNativeTarget "iOSMVPTemplateTests" */ = {
+		39DE5CEE1E414AE900056A24 /* Build configuration list for PBXNativeTarget "CthulluTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39DE5CEF1E414AE900056A24 /* Debug */,
@@ -496,6 +593,7 @@
 				39DE5CF01E414AE900056A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "39DE5CCD1E414AE800056A24"
-               BuildableName = "iOSMVPTemplate.app"
-               BlueprintName = "iOSMVPTemplate"
-               ReferencedContainer = "container:iOSMVPTemplate.xcodeproj">
+               BuildableName = "Cthullu.app"
+               BlueprintName = "Cthullu"
+               ReferencedContainer = "container:Cthullu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "39DE5CE11E414AE900056A24"
-               BuildableName = "iOSMVPTemplateTests.xctest"
-               BlueprintName = "iOSMVPTemplateTests"
-               ReferencedContainer = "container:iOSMVPTemplate.xcodeproj">
+               BuildableName = "CthulluTests.xctest"
+               BlueprintName = "CthulluTests"
+               ReferencedContainer = "container:Cthullu.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39DE5CCD1E414AE800056A24"
-            BuildableName = "iOSMVPTemplate.app"
-            BlueprintName = "iOSMVPTemplate"
-            ReferencedContainer = "container:iOSMVPTemplate.xcodeproj">
+            BuildableName = "Cthullu.app"
+            BlueprintName = "Cthullu"
+            ReferencedContainer = "container:Cthullu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39DE5CCD1E414AE800056A24"
-            BuildableName = "iOSMVPTemplate.app"
-            BlueprintName = "iOSMVPTemplate"
-            ReferencedContainer = "container:iOSMVPTemplate.xcodeproj">
+            BuildableName = "Cthullu.app"
+            BlueprintName = "Cthullu"
+            ReferencedContainer = "container:Cthullu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39DE5CCD1E414AE800056A24"
-            BuildableName = "iOSMVPTemplate.app"
-            BlueprintName = "iOSMVPTemplate"
-            ReferencedContainer = "container:iOSMVPTemplate.xcodeproj">
+            BuildableName = "Cthullu.app"
+            BlueprintName = "Cthullu"
+            ReferencedContainer = "container:Cthullu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

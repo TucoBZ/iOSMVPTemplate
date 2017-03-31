@@ -8,7 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+protocol Presentable: class {
+    func presentModal(viewController: UIViewController, animated: Bool, completion:  (() -> Void)?)
+    func push(viewController: UIViewController, animated: Bool)
+    func handle(error: Error, retrier: (() -> Void)?)
+    func present(url: URL)
+}
+
+protocol GenericView : class {
+    func loading(enable: Bool)
+    func display(textField: UITextField, error: String)
+}
+
+class GenericViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +33,44 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 
+extension GenericViewController : Presentable {
+    
+    func presentModal(viewController: UIViewController, animated: Bool, completion:  (() -> Void)?) {
+        navigationController?.present(viewController, animated: animated, completion: completion)
+    }
+    
+    func push(viewController: UIViewController, animated: Bool) {
+        navigationController?.pushViewController(viewController, animated: animated)
+    }
+    
+    func handle(error: Error, retrier: (() -> Void)?) {
+//        switch error {
+//        case SomeError:
+//             Trate esse erro
+//        default:
+//              Tratamento default
+//        }
+    }
+    
+    func present(url: URL) {
+        UIApplication.shared.openURL(url)
+    }
+}
+
+extension GenericViewController : GenericView {
+    
+    func loading(enable: Bool) {
+        if enable {
+            Loading.show(from: self)
+        } else {
+            Loading.hide()
+        }
+    }
+    
+    
+    func display(textField: UITextField, error: String) {
+    
+    }
+}
