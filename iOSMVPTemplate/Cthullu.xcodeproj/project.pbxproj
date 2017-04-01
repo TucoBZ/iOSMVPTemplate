@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243A102C5F97E46ED82D5C74 /* Pods_CthulluTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F305FE758D8485F19D5B93 /* Pods_CthulluTests.framework */; };
 		39DE5CD21E414AE900056A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE5CD11E414AE900056A24 /* AppDelegate.swift */; };
 		39DE5CD41E414AE900056A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE5CD31E414AE900056A24 /* ViewController.swift */; };
 		39DE5CD71E414AE900056A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CD51E414AE900056A24 /* Main.storyboard */; };
 		39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CD81E414AE900056A24 /* Assets.xcassets */; };
 		39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */; };
 		39DE5CE71E414AE900056A24 /* iOSMVPTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */; };
+		5017AEC6EA60A2CB4D8DAA28 /* Pods_Cthullu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B73E9FC3EBA9B09CC029CE6 /* Pods_Cthullu.framework */; };
 		652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */; };
 		652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */; };
 		652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */; };
@@ -21,6 +23,8 @@
 		652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C366F1E8DCB8100A32FF4 /* Loading.storyboard */; };
 		652C36721E8DCF4C00A32FF4 /* GenericTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36711E8DCF4C00A32FF4 /* GenericTableViewController.xib */; };
 		652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36731E8DD13E00A32FF4 /* CellApresentable.swift */; };
+		652C36761E8F296E00A32FF4 /* Freela.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36751E8F296E00A32FF4 /* Freela.swift */; };
+		659593731E8F305B00D9A7EE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659593721E8F305B00D9A7EE /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 		39DE5CE21E414AE900056A24 /* CthulluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CthulluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMVPTemplateTests.swift; sourceTree = "<group>"; };
 		39DE5CE81E414AE900056A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B73E9FC3EBA9B09CC029CE6 /* Pods_Cthullu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cthullu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelaTableViewCell.xib; sourceTree = "<group>"; };
 		652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaTableViewCell.swift; sourceTree = "<group>"; };
 		652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTablePresenter.swift; sourceTree = "<group>"; };
@@ -52,6 +57,15 @@
 		652C366F1E8DCB8100A32FF4 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		652C36711E8DCF4C00A32FF4 /* GenericTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewController.xib; sourceTree = "<group>"; };
 		652C36731E8DD13E00A32FF4 /* CellApresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellApresentable.swift; sourceTree = "<group>"; };
+		652C36751E8F296E00A32FF4 /* Freela.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freela.swift; sourceTree = "<group>"; };
+		659593721E8F305B00D9A7EE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		8DAE5B78B2C32B314C0EF105 /* Pods-CthulluTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CthulluTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CthulluTests/Pods-CthulluTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91808495B61228097FD29DE6 /* Pods-Cthullu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cthullu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cthullu/Pods-Cthullu.debug.xcconfig"; sourceTree = "<group>"; };
+		97F305FE758D8485F19D5B93 /* Pods_CthulluTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CthulluTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFD99CDE108237C4064737C /* Pods-Cthullu.homolog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cthullu.homolog.xcconfig"; path = "Pods/Target Support Files/Pods-Cthullu/Pods-Cthullu.homolog.xcconfig"; sourceTree = "<group>"; };
+		D35020BCCE3CBE4CAACEA814 /* Pods-CthulluTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CthulluTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CthulluTests/Pods-CthulluTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5032ABECF29DC8016C1B0E1 /* Pods-Cthullu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cthullu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cthullu/Pods-Cthullu.release.xcconfig"; sourceTree = "<group>"; };
+		FF329F9616281E265293A723 /* Pods-CthulluTests.homolog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CthulluTests.homolog.xcconfig"; path = "Pods/Target Support Files/Pods-CthulluTests/Pods-CthulluTests.homolog.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5017AEC6EA60A2CB4D8DAA28 /* Pods_Cthullu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243A102C5F97E46ED82D5C74 /* Pods_CthulluTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +91,12 @@
 		39DE5CC51E414AE800056A24 = {
 			isa = PBXGroup;
 			children = (
+				659593721E8F305B00D9A7EE /* R.generated.swift */,
 				39DE5CD01E414AE900056A24 /* Cthullu */,
 				39DE5CE51E414AE900056A24 /* iOSMVPTemplateTests */,
 				39DE5CCF1E414AE900056A24 /* Products */,
+				D5A3F60DFE5404DB2DA0764F /* Pods */,
+				9B76625C6E25069C823EBDE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,7 @@
 				39DE5CD81E414AE900056A24 /* Assets.xcassets */,
 				39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */,
 				39DE5CDD1E414AE900056A24 /* Info.plist */,
+				652C36751E8F296E00A32FF4 /* Freela.swift */,
 			);
 			name = Cthullu;
 			path = iOSMVPTemplate;
@@ -177,6 +197,28 @@
 			name = Loading;
 			sourceTree = "<group>";
 		};
+		9B76625C6E25069C823EBDE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B73E9FC3EBA9B09CC029CE6 /* Pods_Cthullu.framework */,
+				97F305FE758D8485F19D5B93 /* Pods_CthulluTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5A3F60DFE5404DB2DA0764F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91808495B61228097FD29DE6 /* Pods-Cthullu.debug.xcconfig */,
+				9AFD99CDE108237C4064737C /* Pods-Cthullu.homolog.xcconfig */,
+				F5032ABECF29DC8016C1B0E1 /* Pods-Cthullu.release.xcconfig */,
+				8DAE5B78B2C32B314C0EF105 /* Pods-CthulluTests.debug.xcconfig */,
+				FF329F9616281E265293A723 /* Pods-CthulluTests.homolog.xcconfig */,
+				D35020BCCE3CBE4CAACEA814 /* Pods-CthulluTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +226,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39DE5CEB1E414AE900056A24 /* Build configuration list for PBXNativeTarget "Cthullu" */;
 			buildPhases = (
+				845F75BFEAF2FF427EBF281B /* [CP] Check Pods Manifest.lock */,
+				659593711E8F2FBB00D9A7EE /* ShellScript */,
 				39DE5CCA1E414AE800056A24 /* Sources */,
 				39DE5CCB1E414AE800056A24 /* Frameworks */,
 				39DE5CCC1E414AE800056A24 /* Resources */,
+				CE50763D1570687B0555D735 /* [CP] Embed Pods Frameworks */,
+				7793ACE9D2308735B521AD55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39DE5CEE1E414AE900056A24 /* Build configuration list for PBXNativeTarget "CthulluTests" */;
 			buildPhases = (
+				4A64FCBEAD4122BC951BC048 /* [CP] Check Pods Manifest.lock */,
 				39DE5CDE1E414AE900056A24 /* Sources */,
 				39DE5CDF1E414AE900056A24 /* Frameworks */,
 				39DE5CE01E414AE900056A24 /* Resources */,
+				830A8364DB16FC8A7C8B6AE6 /* [CP] Embed Pods Frameworks */,
+				BE218A1494AB9AF8B18C1AEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +328,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A64FCBEAD4122BC951BC048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		659593711E8F2FBB00D9A7EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
+		7793ACE9D2308735B521AD55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cthullu/Pods-Cthullu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		830A8364DB16FC8A7C8B6AE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CthulluTests/Pods-CthulluTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845F75BFEAF2FF427EBF281B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE218A1494AB9AF8B18C1AEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CthulluTests/Pods-CthulluTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE50763D1570687B0555D735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cthullu/Pods-Cthullu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39DE5CCA1E414AE800056A24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,10 +441,12 @@
 			files = (
 				652C366B1E8DC8FF00A32FF4 /* GenericTableViewController.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
+				659593731E8F305B00D9A7EE /* R.generated.swift in Sources */,
 				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
 				39DE5CD41E414AE900056A24 /* ViewController.swift in Sources */,
 				39DE5CD21E414AE900056A24 /* AppDelegate.swift in Sources */,
 				652C366E1E8DCB5600A32FF4 /* Loading.swift in Sources */,
+				652C36761E8F296E00A32FF4 /* Freela.swift in Sources */,
 				652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +584,7 @@
 		};
 		39DE5CEC1E414AE900056A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91808495B61228097FD29DE6 /* Pods-Cthullu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://debug.com.br";
@@ -442,6 +600,7 @@
 		};
 		39DE5CED1E414AE900056A24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5032ABECF29DC8016C1B0E1 /* Pods-Cthullu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://prod.com.br";
@@ -457,6 +616,7 @@
 		};
 		39DE5CEF1E414AE900056A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAE5B78B2C32B314C0EF105 /* Pods-CthulluTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +631,7 @@
 		};
 		39DE5CF01E414AE900056A24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35020BCCE3CBE4CAACEA814 /* Pods-CthulluTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +696,7 @@
 		};
 		39DE5CF21E414E6F00056A24 /* Homolog */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AFD99CDE108237C4064737C /* Pods-Cthullu.homolog.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "https://homolog.com.br";
@@ -550,6 +712,7 @@
 		};
 		39DE5CF31E414E6F00056A24 /* Homolog */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF329F9616281E265293A723 /* Pods-CthulluTests.homolog.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -17,7 +17,3 @@ protocol CellApresentable {
 extension UITableViewCell {
     func configure(content: Any?) {}
 }
-
-extension UIViewController {
-    func configure(content: Any?) {}
-}

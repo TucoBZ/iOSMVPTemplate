@@ -11,8 +11,8 @@ import UIKit
 
 
 protocol GenericTableViewPresenter{
-    var tableViewDataSource : UITableViewDataSource {get}
-    
+    var numberOfObjects : Int {get}
+    func object(at indexPath: IndexPath) -> CellApresentable?
     func tableView(didSelectRowAt indexPath: IndexPath)
 }
 
@@ -22,8 +22,9 @@ class GenericTablePresenter:  NSObject,GenericTableViewPresenter{
     
     var objects: [CellApresentable]? {
         didSet {
-            guard let someObject = objects?.first else { return }
-            view?.register(nib: someObject.cellNib, identifier: someObject.cellIndentifier)
+            if objects?.count ?? 0 > 0 {
+                view?.configureTableView()
+            }
         }
     }
     
@@ -34,9 +35,10 @@ class GenericTablePresenter:  NSObject,GenericTableViewPresenter{
         super.init()
     }
   
-    
     // MARK: Presentation logic
-    var tableViewDataSource : UITableViewDataSource { return self }
+    var numberOfObjects : Int {
+        return objects?.count ?? 0
+    }
     
     func tableView(didSelectRowAt indexPath: IndexPath) {
         guard let content = objects?[indexPath.row] else { return }
@@ -48,24 +50,9 @@ class GenericTablePresenter:  NSObject,GenericTableViewPresenter{
         presentableView?.push(viewController: controller, animated: true)
     }
     
+    
+    func object(at indexPath: IndexPath) -> CellApresentable? {
+        return objects?[indexPath.row]
+    }
 }
 
-extension GenericTablePresenter : UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects?.count ?? 0
-    }
-   
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let content = objects?[indexPath.row] else { return UITableViewCell() }
-        let cell = tableView.dequeueReusableCell(withIdentifier: content.cellIndentifier, for: indexPath)
-        
-        cell.configure(content: content)
-        
-        return cell
-    }
-}
