@@ -8,22 +8,27 @@
 
 import UIKit
 
-struct Freela {
-    var points: NSNumber?
-    var pointsToExpire: Int?
-    var expiredPointsSum: Int?
-    var lastUpdate: Date?
-    var expiredList: NSArray?
-    var success: Bool?
+
+enum FreelaType {
+    case development
+    case design
+    case productOwner
+    case tester
+    case projectManager
 }
 
-struct FreelaList: CellApresentable {
-    
-    
-    
+struct Freela {
+    var id: NSNumber?
+    var title: String?
+    var description: String?
+    var type: [FreelaType] = []
+    var createdDate: Date = Date()
+}
+
+extension Freela: CellApresentable {
     
     var cellNib : UINib? {
-        return R.nib.freelaTableViewCell()
+        return UINib(nibName: "FreelaTableViewCell", bundle: nil)
     }
     
     var cellIndentifier : String {

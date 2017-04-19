@@ -12,6 +12,7 @@ import UIKit
 
 protocol GenericTableViewPresenter{
     var numberOfObjects : Int {get}
+    func set(list: [CellApresentable])
     func object(at indexPath: IndexPath) -> CellApresentable?
     func tableView(didSelectRowAt indexPath: IndexPath)
 }
@@ -53,6 +54,10 @@ class GenericTablePresenter:  NSObject,GenericTableViewPresenter{
     
     func object(at indexPath: IndexPath) -> CellApresentable? {
         return objects?[indexPath.row]
+    }
+    
+    func set(list: [CellApresentable]) {
+        objects = list
     }
 }
 

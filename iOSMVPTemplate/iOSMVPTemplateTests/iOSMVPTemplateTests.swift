@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import iOSMVPTemplate
+@testable import Cthullu
 
 class iOSMVPTemplateTests: XCTestCase {
     
