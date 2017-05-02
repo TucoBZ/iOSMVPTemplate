@@ -70,6 +70,8 @@ class ContextTableViewController: GenericViewController {
 
     func updateView(){
         // NOTE: Ask the Presenter to do some work
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.genericView = self
         tableView.presentable = self
         presenter?.update()
@@ -84,6 +86,42 @@ extension ContextTableViewController : ContextTableViewView {
     func updateTableView(with dataSource: [CellApresentable]) {
         // NOTE: Display the result from the Presenter
         tableView.present(list: dataSource)
+    }
+}
+
+
+// MARK - UITableViewDelegate
+extension ContextTableViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let table = tableView as? GenericTableView {
+            table.presenter?.tableView(didSelectRowAt: indexPath)
+        }
+    }
+}
+
+// MARK - UITableViewDataSource
+extension ContextTableViewController : UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let table = tableView as? GenericTableView {
+            return table.presenter?.numberOfObjects ?? 0
+        }
+        return 0
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let table = tableView as? GenericTableView ,
+            let content = table.presenter?.object(at: indexPath) else { return UITableViewCell() }
+        let cell = tableView.dequeueReusableCell(withIdentifier: content.cellIndentifier, for: indexPath)
+        
+        cell.configure(content: content)
+        
+        return cell
     }
 }
 

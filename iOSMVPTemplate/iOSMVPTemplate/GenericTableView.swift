@@ -43,8 +43,6 @@ class GenericTableView: UITableView {
   
     // MARK: Event handling
     func configureTableView(){
-        delegate = self
-        dataSource = self
         
         estimatedRowHeight = 80
         rowHeight = UITableViewAutomaticDimension
@@ -73,34 +71,6 @@ extension GenericTableView : GenericTableViewView {
     }
 }
 
-// MARK - UITableViewDelegate
-extension GenericTableView : UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.tableView(didSelectRowAt: indexPath)
-    }
-}
-
-// MARK - UITableViewDataSource
-extension GenericTableView : UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.numberOfObjects ?? 0
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let content = presenter?.object(at: indexPath) else { return UITableViewCell() }
-        let cell = tableView.dequeueReusableCell(withIdentifier: content.cellIndentifier, for: indexPath)
-        
-        cell.configure(content: content)
-        
-        return cell
-    }
-}
 
 extension GenericTableView : Presentable {
     

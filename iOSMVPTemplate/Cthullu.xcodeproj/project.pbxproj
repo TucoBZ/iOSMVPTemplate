@@ -13,6 +13,9 @@
 		39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CD81E414AE900056A24 /* Assets.xcassets */; };
 		39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */; };
 		39DE5CE71E414AE900056A24 /* iOSMVPTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */; };
+		650163161EB0148C009C3A4F /* Freelancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650163151EB0148C009C3A4F /* Freelancer.swift */; };
+		650163181EB01614009C3A4F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650163171EB01614009C3A4F /* Profile.swift */; };
+		6501631A1EB01693009C3A4F /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650163191EB01693009C3A4F /* Address.swift */; };
 		652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */; };
 		652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */; };
 		652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */; };
@@ -47,6 +50,9 @@
 		39DE5CE21E414AE900056A24 /* CthulluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CthulluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE5CE61E414AE900056A24 /* iOSMVPTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMVPTemplateTests.swift; sourceTree = "<group>"; };
 		39DE5CE81E414AE900056A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650163151EB0148C009C3A4F /* Freelancer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freelancer.swift; sourceTree = "<group>"; };
+		650163171EB01614009C3A4F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		650163191EB01693009C3A4F /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelaTableViewCell.xib; sourceTree = "<group>"; };
 		652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaTableViewCell.swift; sourceTree = "<group>"; };
 		652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTablePresenter.swift; sourceTree = "<group>"; };
@@ -188,6 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				652C36751E8F296E00A32FF4 /* Freela.swift */,
+				650163151EB0148C009C3A4F /* Freelancer.swift */,
+				650163171EB01614009C3A4F /* Profile.swift */,
+				650163191EB01693009C3A4F /* Address.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -318,10 +327,13 @@
 			files = (
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
+				6501631A1EB01693009C3A4F /* Address.swift in Sources */,
 				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
 				65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */,
 				39DE5CD41E414AE900056A24 /* GenericViewController.swift in Sources */,
 				65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */,
+				650163161EB0148C009C3A4F /* Freelancer.swift in Sources */,
+				650163181EB01614009C3A4F /* Profile.swift in Sources */,
 				39DE5CD21E414AE900056A24 /* AppDelegate.swift in Sources */,
 				652C366E1E8DCB5600A32FF4 /* Loading.swift in Sources */,
 				652C36761E8F296E00A32FF4 /* Freela.swift in Sources */,
