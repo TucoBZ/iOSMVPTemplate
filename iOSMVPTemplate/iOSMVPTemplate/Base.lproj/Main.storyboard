@@ -11,7 +11,7 @@
         <!--Freelas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Freelas" id="BYZ-38-t0r" customClass="FrellaViewController" customModule="Cthullu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Freelas" id="BYZ-38-t0r" customClass="ContextTableViewController" customModule="Cthullu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,10 +33,15 @@
                             <constraint firstItem="yTp-N4-Bmk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uqs-wQ-rNu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5o9-I1-z1B"/>
+                    <tabBarItem key="tabBarItem" title="Freelas" image="ic_mail_outline" id="5o9-I1-z1B"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="tableView" destination="yTp-N4-Bmk" id="4em-yo-At0"/>
+                        <outlet property="tableView" destination="yTp-N4-Bmk" id="0N9-DR-Q6U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,29 +59,97 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Orj-hV-nZK"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ynx-1u-Slj"/>
+                        <segue destination="3QA-Ig-YJf" kind="relationship" relationship="viewControllers" id="5Ht-z3-ZYI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6n-uQ-3jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zR6-qT-bIJ">
+        <!--Freelancer-->
+        <scene sceneID="Yjy-1Z-8kQ">
             <objects>
-                <viewController id="idW-by-2pF" sceneMemberID="viewController">
+                <viewController title="Freelancer" id="3QA-Ig-YJf" customClass="ContextTableViewController" customModule="Cthullu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JWf-cm-kzY"/>
-                        <viewControllerLayoutGuide type="bottom" id="8YU-Il-peh"/>
+                        <viewControllerLayoutGuide type="top" id="Qlp-IX-zQ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Xf-vy-yR4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l0a-Ws-B66">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="CJJ-fa-UhT">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HUQ-FX-Lqh" customClass="GenericTableView" customModule="Cthullu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Xf-vy-yR4" firstAttribute="top" secondItem="HUQ-FX-Lqh" secondAttribute="bottom" id="735-r4-Ftd"/>
+                            <constraint firstItem="HUQ-FX-Lqh" firstAttribute="top" secondItem="Qlp-IX-zQ1" secondAttribute="bottom" id="ICd-Is-pld"/>
+                            <constraint firstAttribute="trailing" secondItem="HUQ-FX-Lqh" secondAttribute="trailing" id="K4C-aQ-1DM"/>
+                            <constraint firstItem="HUQ-FX-Lqh" firstAttribute="leading" secondItem="CJJ-fa-UhT" secondAttribute="leading" id="tSi-gQ-hl9"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="ic_search" id="tFY-Im-pF5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="HUQ-FX-Lqh" id="0Pl-u3-XSr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5mf-P4-P2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xA5-Id-0hM" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="903"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="4bq-W0-QPW">
+            <objects>
+                <viewController storyboardIdentifier="detailTableViewController" title="Detail" id="VZG-Wr-uHN" customClass="ContextTableViewController" customModule="Cthullu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyH-0t-SQj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vth-ke-Gsl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ut-0J-FaU">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-wk-VXU" customClass="GenericTableView" customModule="Cthullu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wQH-wk-VXU" firstAttribute="top" secondItem="hyH-0t-SQj" secondAttribute="bottom" id="J1c-lX-6Fk"/>
+                            <constraint firstItem="wQH-wk-VXU" firstAttribute="leading" secondItem="3Ut-0J-FaU" secondAttribute="leading" id="bJ2-ML-mXE"/>
+                            <constraint firstAttribute="trailing" secondItem="wQH-wk-VXU" secondAttribute="trailing" id="ts8-Mz-jy9"/>
+                            <constraint firstItem="Vth-ke-Gsl" firstAttribute="top" secondItem="wQH-wk-VXU" secondAttribute="bottom" id="wrI-ed-GxL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="ic_search" id="f7Y-4f-h1c"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="wQH-wk-VXU" id="FGT-Je-aWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fY4-Se-p0E" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-555"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_mail_outline" width="24" height="24"/>
+        <image name="ic_search" width="24" height="24"/>
+    </resources>
 </document>

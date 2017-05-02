@@ -21,8 +21,9 @@
 		652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C366F1E8DCB8100A32FF4 /* Loading.storyboard */; };
 		652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36731E8DD13E00A32FF4 /* CellApresentable.swift */; };
 		652C36761E8F296E00A32FF4 /* Freela.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36751E8F296E00A32FF4 /* Freela.swift */; };
-		65E4736A1E9DA93500EAA0E3 /* FrellaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473681E9DA93500EAA0E3 /* FrellaPresenter.swift */; };
-		65E4736B1E9DA93500EAA0E3 /* FrellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473691E9DA93500EAA0E3 /* FrellaViewController.swift */; };
+		65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */; };
+		65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */; };
+		65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +55,9 @@
 		652C366F1E8DCB8100A32FF4 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		652C36731E8DD13E00A32FF4 /* CellApresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellApresentable.swift; sourceTree = "<group>"; };
 		652C36751E8F296E00A32FF4 /* Freela.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freela.swift; sourceTree = "<group>"; };
-		65E473681E9DA93500EAA0E3 /* FrellaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaPresenter.swift; sourceTree = "<group>"; };
-		65E473691E9DA93500EAA0E3 /* FrellaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaViewController.swift; sourceTree = "<group>"; };
+		65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewPresenter.swift; sourceTree = "<group>"; };
+		65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewController.swift; sourceTree = "<group>"; };
+		65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				65E473651E9DA18700EAA0E3 /* Model */,
-				39DE5CD31E414AE900056A24 /* GenericViewController.swift */,
 				652C36671E8DC7F800A32FF4 /* Util */,
-				652C36661E8DC7CE00A32FF4 /* GenericTableViewController */,
 				652C365F1E8DBB1900A32FF4 /* View */,
 			);
 			name = Resources;
@@ -133,6 +133,8 @@
 		652C365F1E8DBB1900A32FF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				652C36661E8DC7CE00A32FF4 /* GenericTableView */,
+				39DE5CD31E414AE900056A24 /* GenericViewController.swift */,
 				652C366C1E8DCB3E00A32FF4 /* Loading */,
 				652C36601E8DBB2200A32FF4 /* Cell */,
 			);
@@ -156,14 +158,14 @@
 			name = FreelaTableViewCell;
 			sourceTree = "<group>";
 		};
-		652C36661E8DC7CE00A32FF4 /* GenericTableViewController */ = {
+		652C36661E8DC7CE00A32FF4 /* GenericTableView */ = {
 			isa = PBXGroup;
 			children = (
 				652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */,
 				652C36691E8DC8FF00A32FF4 /* GenericTableView.swift */,
 				652C36731E8DD13E00A32FF4 /* CellApresentable.swift */,
 			);
-			name = GenericTableViewController;
+			name = GenericTableView;
 			sourceTree = "<group>";
 		};
 		652C36671E8DC7F800A32FF4 /* Util */ = {
@@ -201,8 +203,9 @@
 		65E473671E9DA7EE00EAA0E3 /* FrellaViewController */ = {
 			isa = PBXGroup;
 			children = (
-				65E473681E9DA93500EAA0E3 /* FrellaPresenter.swift */,
-				65E473691E9DA93500EAA0E3 /* FrellaViewController.swift */,
+				65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */,
+				65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */,
+				65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */,
 			);
 			name = FrellaViewController;
 			sourceTree = "<group>";
@@ -253,7 +256,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Guilherme Machado";
+				ORGANIZATIONNAME = "Tulio Bazan";
 				TargetAttributes = {
 					39DE5CCD1E414AE800056A24 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -316,12 +319,13 @@
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
 				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
-				65E4736A1E9DA93500EAA0E3 /* FrellaPresenter.swift in Sources */,
+				65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */,
 				39DE5CD41E414AE900056A24 /* GenericViewController.swift in Sources */,
+				65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */,
 				39DE5CD21E414AE900056A24 /* AppDelegate.swift in Sources */,
 				652C366E1E8DCB5600A32FF4 /* Loading.swift in Sources */,
 				652C36761E8F296E00A32FF4 /* Freela.swift in Sources */,
-				65E4736B1E9DA93500EAA0E3 /* FrellaViewController.swift in Sources */,
+				65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */,
 				652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ class FreelaTableViewCell: UITableViewCell {
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var jobTypeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +30,8 @@ class FreelaTableViewCell: UITableViewCell {
         if let freela = content as? Freela {
             topicLabel.text = freela.title
             descriptionLabel.text = freela.description
+            jobTypeLabel.text = freela.type.description
+            imageIcon.image = freela.type.icon
         }
     }
 }
