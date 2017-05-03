@@ -11,6 +11,7 @@ import UIKit
 protocol CellApresentable {
     var cellNib : UINib? {get}
     var cellIndentifier : String {get}
+    var hasDetail : Bool {get}
     func fetchDetail(completion: ((UIViewController) -> Void)?)
 }
 

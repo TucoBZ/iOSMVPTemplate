@@ -40,7 +40,7 @@ class ContextTableViewController: GenericViewController {
             case .freela:
                 return FrellaPresenter(view: view)
             case .freelaDetail:
-                return FrellaPresenter(view: view)
+                return DetailFreelaPresenter(view: view)
             default:
                 return nil
             }

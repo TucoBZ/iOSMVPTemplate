@@ -27,6 +27,7 @@
 		65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */; };
 		65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */; };
 		65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */; };
+		65F6F17A1EB956CD00A7CAA8 /* DetailFreelaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewPresenter.swift; sourceTree = "<group>"; };
 		65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewController.swift; sourceTree = "<group>"; };
 		65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaPresenter.swift; sourceTree = "<group>"; };
+		65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFreelaPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */,
 				65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */,
 				65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */,
+				65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */,
 			);
 			name = FrellaViewController;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F6F17A1EB956CD00A7CAA8 /* DetailFreelaPresenter.swift in Sources */,
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
 				6501631A1EB01693009C3A4F /* Address.swift in Sources */,

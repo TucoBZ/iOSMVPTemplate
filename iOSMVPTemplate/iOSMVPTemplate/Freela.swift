@@ -69,11 +69,19 @@ extension Freela: CellApresentable {
         return "FreelaListCellIndentifier"
     }
     
+    var hasDetail : Bool {
+        return true
+    }
+    
     func fetchDetail(completion: ((UIViewController) -> Void)?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier :"detailTableViewController") as? ContextTableViewController {
             viewController.context = .freelaDetail
             
+            if let presenter = viewController.presenter as? DetailFreelaPresenter {
+                presenter.freela = self
+            }
+        
             completion?(viewController)
         }
     }

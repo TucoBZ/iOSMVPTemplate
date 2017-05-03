@@ -50,7 +50,7 @@ class GenericTableView: UITableView {
         backgroundView?.backgroundColor = UIColor.white
         tableFooterView = UIView()
         
-        if let object = presenter?.object(at: IndexPath(row: 1, section: 0)) {
+        if let object = presenter?.object(at: IndexPath(row: 0, section: 0)) {
             register(object.cellNib, forCellReuseIdentifier: object.cellIndentifier)
         }
     }
