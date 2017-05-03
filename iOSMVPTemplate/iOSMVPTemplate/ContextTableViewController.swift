@@ -22,10 +22,24 @@ class ContextTableViewController: GenericViewController {
         case freela
         case freelaDetail
         
+        var title: String {
+            switch self {
+            case .freela:
+                return "Freela"
+            case .freelaDetail:
+                return "Detalhe do Freela"
+            default:
+                return ""
+            }
+
+        }
+        
         
         func createPresenter(view: ContextTableViewView) -> ContextTableViewPresenter? {
             switch self {
             case .freela:
+                return FrellaPresenter(view: view)
+            case .freelaDetail:
                 return FrellaPresenter(view: view)
             default:
                 return nil
@@ -37,6 +51,8 @@ class ContextTableViewController: GenericViewController {
     var context: TableContext = .freela {
         didSet {
             presenter = context.createPresenter(view: self)
+            presenter?.update()
+            title = context.title
         }
     }
     
@@ -85,7 +101,7 @@ extension ContextTableViewController : ContextTableViewView {
 
     func updateTableView(with dataSource: [CellApresentable]) {
         // NOTE: Display the result from the Presenter
-        tableView.present(list: dataSource)
+        tableView?.present(list: dataSource)
     }
 }
 

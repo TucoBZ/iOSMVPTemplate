@@ -27,13 +27,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yTp-N4-Bmk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DmL-xv-8LZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yTp-N4-Bmk" secondAttribute="bottom" id="Qa3-fj-bdX"/>
-                            <constraint firstItem="yTp-N4-Bmk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="S3K-XI-7YV"/>
                             <constraint firstAttribute="trailing" secondItem="yTp-N4-Bmk" secondAttribute="trailing" id="qUA-Cc-zfa"/>
                             <constraint firstItem="yTp-N4-Bmk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uqs-wQ-rNu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Freelas" image="ic_mail_outline" id="5o9-I1-z1B"/>
+                    <navigationItem key="navigationItem" id="J2O-md-ORV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dpp-9o-XsQ">
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ynx-1u-Slj"/>
+                        <segue destination="tmr-RH-GeT" kind="relationship" relationship="viewControllers" id="ynx-1u-Slj"/>
                         <segue destination="3QA-Ig-YJf" kind="relationship" relationship="viewControllers" id="5Ht-z3-ZYI"/>
                     </connections>
                 </tabBarController>
@@ -116,24 +116,24 @@
                         <viewControllerLayoutGuide type="bottom" id="Vth-ke-Gsl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Ut-0J-FaU">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-wk-VXU" customClass="GenericTableView" customModule="Cthullu" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wQH-wk-VXU" firstAttribute="top" secondItem="hyH-0t-SQj" secondAttribute="bottom" id="J1c-lX-6Fk"/>
+                            <constraint firstItem="wQH-wk-VXU" firstAttribute="top" secondItem="3Ut-0J-FaU" secondAttribute="top" id="4Fg-Hd-4gY"/>
                             <constraint firstItem="wQH-wk-VXU" firstAttribute="leading" secondItem="3Ut-0J-FaU" secondAttribute="leading" id="bJ2-ML-mXE"/>
                             <constraint firstAttribute="trailing" secondItem="wQH-wk-VXU" secondAttribute="trailing" id="ts8-Mz-jy9"/>
                             <constraint firstItem="Vth-ke-Gsl" firstAttribute="top" secondItem="wQH-wk-VXU" secondAttribute="bottom" id="wrI-ed-GxL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="ic_search" id="f7Y-4f-h1c"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
                             <integer key="value" value="0"/>
@@ -145,7 +145,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fY4-Se-p0E" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="-555"/>
+            <point key="canvasLocation" x="136.80000000000001" y="-555.47226386806597"/>
+        </scene>
+        <!--Freela-->
+        <scene sceneID="Dfk-6s-ytI">
+            <objects>
+                <navigationController title="Freela" automaticallyAdjustsScrollViewInsets="NO" id="tmr-RH-GeT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Freelas" image="ic_mail_outline" id="5o9-I1-z1B"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZdI-pP-LZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xGm-SZ-mF8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTs-k1-GoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>

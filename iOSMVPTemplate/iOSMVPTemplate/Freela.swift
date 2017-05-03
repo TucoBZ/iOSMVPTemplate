@@ -72,6 +72,7 @@ extension Freela: CellApresentable {
     func fetchDetail(completion: ((UIViewController) -> Void)?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier :"detailTableViewController") as? ContextTableViewController {
+            viewController.context = .freelaDetail
             
             completion?(viewController)
         }
