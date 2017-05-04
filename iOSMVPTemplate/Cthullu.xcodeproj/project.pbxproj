@@ -28,6 +28,10 @@
 		65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */; };
 		65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */; };
 		65F6F17A1EB956CD00A7CAA8 /* DetailFreelaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */; };
+		65F6F17C1EB9610B00A7CAA8 /* FreelaDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6F17B1EB9610B00A7CAA8 /* FreelaDetail.swift */; };
+		65F6F1801EB9629400A7CAA8 /* FreelaDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6F17E1EB9629400A7CAA8 /* FreelaDetailTableViewCell.swift */; };
+		65F6F1811EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F6F17F1EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib */; };
+		65F6F1831EB9671400A7CAA8 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6F1821EB9671400A7CAA8 /* Phone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewController.swift; sourceTree = "<group>"; };
 		65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaPresenter.swift; sourceTree = "<group>"; };
 		65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFreelaPresenter.swift; sourceTree = "<group>"; };
+		65F6F17B1EB9610B00A7CAA8 /* FreelaDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaDetail.swift; sourceTree = "<group>"; };
+		65F6F17E1EB9629400A7CAA8 /* FreelaDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaDetailTableViewCell.swift; sourceTree = "<group>"; };
+		65F6F17F1EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelaDetailTableViewCell.xib; sourceTree = "<group>"; };
+		65F6F1821EB9671400A7CAA8 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 		652C36601E8DBB2200A32FF4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				65F6F17D1EB9620600A7CAA8 /* FreelaDetailTableViewCell */,
 				652C36651E8DBBF400A32FF4 /* FreelaTableViewCell */,
 			);
 			name = Cell;
@@ -196,9 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				652C36751E8F296E00A32FF4 /* Freela.swift */,
+				65F6F17B1EB9610B00A7CAA8 /* FreelaDetail.swift */,
 				650163151EB0148C009C3A4F /* Freelancer.swift */,
 				650163171EB01614009C3A4F /* Profile.swift */,
 				650163191EB01693009C3A4F /* Address.swift */,
+				65F6F1821EB9671400A7CAA8 /* Phone.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -220,6 +231,15 @@
 				65F6F1791EB956CD00A7CAA8 /* DetailFreelaPresenter.swift */,
 			);
 			name = FrellaViewController;
+			sourceTree = "<group>";
+		};
+		65F6F17D1EB9620600A7CAA8 /* FreelaDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				65F6F17E1EB9629400A7CAA8 /* FreelaDetailTableViewCell.swift */,
+				65F6F17F1EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib */,
+			);
+			name = FreelaDetailTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */,
+				65F6F1811EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib in Resources */,
 				39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */,
 				652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */,
 				652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */,
@@ -332,7 +353,9 @@
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
 				6501631A1EB01693009C3A4F /* Address.swift in Sources */,
+				65F6F1831EB9671400A7CAA8 /* Phone.swift in Sources */,
 				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
+				65F6F1801EB9629400A7CAA8 /* FreelaDetailTableViewCell.swift in Sources */,
 				65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */,
 				39DE5CD41E414AE900056A24 /* GenericViewController.swift in Sources */,
 				65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */,
@@ -343,6 +366,7 @@
 				652C36761E8F296E00A32FF4 /* Freela.swift in Sources */,
 				65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */,
 				652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */,
+				65F6F17C1EB9610B00A7CAA8 /* FreelaDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

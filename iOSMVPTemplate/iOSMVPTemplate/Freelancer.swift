@@ -27,6 +27,10 @@ extension Freelancer: CellApresentable {
         return "FreelaListCellIndentifier"
     }
     
+    var hasDetail : Bool {
+        return true
+    }
+    
     func fetchDetail(completion: ((UIViewController) -> Void)?) {
         
     }

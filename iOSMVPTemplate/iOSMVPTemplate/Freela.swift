@@ -79,7 +79,9 @@ extension Freela: CellApresentable {
             viewController.context = .freelaDetail
             
             if let presenter = viewController.presenter as? DetailFreelaPresenter {
-                presenter.freela = self
+                
+                
+                presenter.freela = FreelaDetail.mock(freela: self)
             }
         
             completion?(viewController)

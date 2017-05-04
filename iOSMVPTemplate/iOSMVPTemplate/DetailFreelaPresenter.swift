@@ -10,7 +10,7 @@ import Foundation
 
 class DetailFreelaPresenter: ContextTableViewPresenter {
     
-    var freela: Freela? 
+    var freela: FreelaDetail?
     
     override func update() {
         // NOTE: Format the response and pass the result back to the View Controller
