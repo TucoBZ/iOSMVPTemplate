@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let dictonary = Bundle.main.infoDictionary?["EnviromentSetting"]
         let environment: [String:AnyObject]? = dictonary as? [String:AnyObject]
         let baseURL = environment?["BASE_URL"] as! String//TODO: Remove force unwrap if possible
+        
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
         
         print(baseURL)
         

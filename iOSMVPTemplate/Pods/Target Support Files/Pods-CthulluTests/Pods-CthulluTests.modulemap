@@ -1,0 +1,6 @@
+framework module Pods_CthulluTests {
+  umbrella header "Pods-CthulluTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
