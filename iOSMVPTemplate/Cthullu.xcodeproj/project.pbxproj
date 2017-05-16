@@ -24,6 +24,10 @@
 		652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C366F1E8DCB8100A32FF4 /* Loading.storyboard */; };
 		652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36731E8DD13E00A32FF4 /* CellApresentable.swift */; };
 		652C36761E8F296E00A32FF4 /* Freela.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36751E8F296E00A32FF4 /* Freela.swift */; };
+		655F0AAF1EC29044001D518F /* FreelancerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655F0AAD1EC29044001D518F /* FreelancerTableViewCell.xib */; };
+		655F0AB01EC29044001D518F /* FreelancerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0AAE1EC29044001D518F /* FreelancerTableViewCell.swift */; };
+		655F0AB31EC29F31001D518F /* jobIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0AB11EC29F31001D518F /* jobIconView.swift */; };
+		655F0AB41EC29F31001D518F /* jobIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655F0AB21EC29F31001D518F /* jobIconView.xib */; };
 		65E4736A1E9DA93500EAA0E3 /* ContextTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */; };
 		65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */; };
 		65E4736D1EA83E7900EAA0E3 /* FrellaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */; };
@@ -66,6 +70,10 @@
 		652C366F1E8DCB8100A32FF4 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		652C36731E8DD13E00A32FF4 /* CellApresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellApresentable.swift; sourceTree = "<group>"; };
 		652C36751E8F296E00A32FF4 /* Freela.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freela.swift; sourceTree = "<group>"; };
+		655F0AAD1EC29044001D518F /* FreelancerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelancerTableViewCell.xib; sourceTree = "<group>"; };
+		655F0AAE1EC29044001D518F /* FreelancerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelancerTableViewCell.swift; sourceTree = "<group>"; };
+		655F0AB11EC29F31001D518F /* jobIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jobIconView.swift; sourceTree = "<group>"; };
+		655F0AB21EC29F31001D518F /* jobIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = jobIconView.xib; sourceTree = "<group>"; };
 		65E473681E9DA93500EAA0E3 /* ContextTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewPresenter.swift; sourceTree = "<group>"; };
 		65E473691E9DA93500EAA0E3 /* ContextTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextTableViewController.swift; sourceTree = "<group>"; };
 		65E4736C1EA83E7900EAA0E3 /* FrellaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrellaPresenter.swift; sourceTree = "<group>"; };
@@ -160,8 +168,11 @@
 		652C36601E8DBB2200A32FF4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				655F0AAC1EC28FDE001D518F /* FreelancerTableViewCell */,
 				65F6F17D1EB9620600A7CAA8 /* FreelaDetailTableViewCell */,
 				652C36651E8DBBF400A32FF4 /* FreelaTableViewCell */,
+				655F0AB11EC29F31001D518F /* jobIconView.swift */,
+				655F0AB21EC29F31001D518F /* jobIconView.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -199,6 +210,15 @@
 				652C366F1E8DCB8100A32FF4 /* Loading.storyboard */,
 			);
 			name = Loading;
+			sourceTree = "<group>";
+		};
+		655F0AAC1EC28FDE001D518F /* FreelancerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				655F0AAD1EC29044001D518F /* FreelancerTableViewCell.xib */,
+				655F0AAE1EC29044001D518F /* FreelancerTableViewCell.swift */,
+			);
+			name = FreelancerTableViewCell;
 			sourceTree = "<group>";
 		};
 		65E473651E9DA18700EAA0E3 /* Model */ = {
@@ -328,10 +348,12 @@
 			files = (
 				39DE5CDC1E414AE900056A24 /* LaunchScreen.storyboard in Resources */,
 				65F6F1811EB9629400A7CAA8 /* FreelaDetailTableViewCell.xib in Resources */,
+				655F0AAF1EC29044001D518F /* FreelancerTableViewCell.xib in Resources */,
 				39DE5CD91E414AE900056A24 /* Assets.xcassets in Resources */,
 				652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */,
 				652C36701E8DCB8100A32FF4 /* Loading.storyboard in Resources */,
 				39DE5CD71E414AE900056A24 /* Main.storyboard in Resources */,
+				655F0AB41EC29F31001D518F /* jobIconView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +374,7 @@
 				65F6F17A1EB956CD00A7CAA8 /* DetailFreelaPresenter.swift in Sources */,
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
+				655F0AB31EC29F31001D518F /* jobIconView.swift in Sources */,
 				6501631A1EB01693009C3A4F /* Address.swift in Sources */,
 				65F6F1831EB9671400A7CAA8 /* Phone.swift in Sources */,
 				652C36741E8DD13E00A32FF4 /* CellApresentable.swift in Sources */,
@@ -367,6 +390,7 @@
 				65E4736B1E9DA93500EAA0E3 /* ContextTableViewController.swift in Sources */,
 				652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */,
 				65F6F17C1EB9610B00A7CAA8 /* FreelaDetail.swift in Sources */,
+				655F0AB01EC29044001D518F /* FreelancerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

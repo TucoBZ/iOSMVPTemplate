@@ -109,10 +109,21 @@ extension ContextTableViewController : ContextTableViewView {
 // MARK - UITableViewDelegate
 extension ContextTableViewController : UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        guard let table = tableView as? GenericTableView ,
+            let content = table.presenter?.object(at: indexPath) else { return nil }
+        if content.hasDetail {
+            return indexPath
+        }
+        
+        return nil
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let table = tableView as? GenericTableView {
             table.presenter?.tableView(didSelectRowAt: indexPath)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

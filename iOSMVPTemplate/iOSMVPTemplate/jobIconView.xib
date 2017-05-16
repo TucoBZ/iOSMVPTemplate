@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="jobIconView" customModule="Cthullu" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="6o1-Sw-Im8" id="SeZ-Vw-acZ"/>
+                <outlet property="jobLabel" destination="DCL-o6-CCt" id="qwU-db-Hxy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-xJ-I5Z">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6o1-Sw-Im8">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HFp-KV-BKA"/>
+                                <constraint firstAttribute="width" constant="50" id="N6U-zT-jYc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="product owner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="DCL-o6-CCt">
+                            <rect key="frame" x="0.0" y="50" width="50" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wz8-xJ-I5Z" secondAttribute="bottom" id="SHW-e0-cXf"/>
+                <constraint firstAttribute="trailing" secondItem="Wz8-xJ-I5Z" secondAttribute="trailing" id="Sgi-xF-Whu"/>
+                <constraint firstItem="Wz8-xJ-I5Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="epx-TX-Kuh"/>
+                <constraint firstItem="Wz8-xJ-I5Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yy7-1L-p43"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-192" y="-345.5"/>
+        </view>
+    </objects>
+</document>
