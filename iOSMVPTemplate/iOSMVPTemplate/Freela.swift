@@ -9,7 +9,7 @@
 import UIKit
 
 
-enum FreelaType {
+enum FreelaType: String {
     case development
     case design
     case productOwner

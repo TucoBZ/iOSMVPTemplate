@@ -33,7 +33,13 @@
                             <constraint firstItem="yTp-N4-Bmk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uqs-wQ-rNu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J2O-md-ORV"/>
+                    <navigationItem key="navigationItem" id="J2O-md-ORV">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Nh4-1Y-e4v">
+                            <connections>
+                                <action selector="addFreela:" destination="BYZ-38-t0r" id="ioa-vs-rVi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="shapeAdapter">
@@ -41,6 +47,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="addFreelaButton" destination="Nh4-1Y-e4v" id="5ip-4u-wtf"/>
                         <outlet property="tableView" destination="yTp-N4-Bmk" id="0N9-DR-Q6U"/>
                     </connections>
                 </viewController>

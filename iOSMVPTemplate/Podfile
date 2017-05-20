@@ -7,7 +7,8 @@ target 'Cthullu' do
 
   # Pods for Cthullu
 	
-  pod 'Firebase/Database'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
   
   target 'CthulluTests' do
     inherit! :search_paths

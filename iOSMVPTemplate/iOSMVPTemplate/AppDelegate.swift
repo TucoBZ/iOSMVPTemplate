@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Use Firebase library to configure APIs
         FIRApp.configure()
-        
+        FIRDatabase.database().persistenceEnabled = true
+        let freelas = Factory.instance.getFreelaDetail()
         print(baseURL)
         
         return true
