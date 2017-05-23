@@ -108,6 +108,7 @@ extension ContextTableViewController : ContextTableViewView {
     func updateTableView(with dataSource: [CellApresentable]) {
         // NOTE: Display the result from the Presenter
         tableView?.present(list: dataSource)
+        tableView?.reloadData()
     }
 }
 

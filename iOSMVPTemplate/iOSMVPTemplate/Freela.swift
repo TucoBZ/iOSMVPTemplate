@@ -33,6 +33,11 @@ enum FreelaType: String {
         }
     }
     
+    static var freelaTypes: [String] {
+        return ["development", "design", "productOwner", "tester", "projectManager"]
+        
+    }
+    
     var description : String {
         get {
             switch self {

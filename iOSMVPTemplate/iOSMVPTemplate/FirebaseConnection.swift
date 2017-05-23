@@ -12,13 +12,23 @@ import Firebase
 
 class FirebaseConnection : NSObject, FactoryConnection {
     
-    func getFreelaDetail() -> [FreelaDetail] {
+    func getFreelaDetail(completion: (([FreelaDetail]) -> ())?) {
+    
         let ref = FIRDatabase.database().reference(withPath: "Freela")
         //let frellaRef = ref.child("Frella")
         ref.observe(.value, with: { snapshot in
-                print(snapshot.value)
+            
+            var freelaDetails: [FreelaDetail] = []
+            
+            for item in snapshot.children {
+                if let firdata = item as? FIRDataSnapshot {
+                    let freela = FreelaDetail(snapshot: firdata)
+                    freelaDetails.append(freela)
+                }
+            }
+            
+            completion?(freelaDetails)
         })
-        return []
     }
     
     func update(object: FreelaDetail, response: (() -> Void)?) {

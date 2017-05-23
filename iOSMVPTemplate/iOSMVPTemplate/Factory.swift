@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FactoryConnection {
-    func getFreelaDetail() -> [FreelaDetail]
+    func getFreelaDetail(completion: (([FreelaDetail]) -> ())?)
     func update(object: FreelaDetail, response: (() -> Void)?)
 
     func getProfile() -> [Profile]
@@ -28,8 +28,8 @@ public class Factory : NSObject {
 
 extension Factory: FactoryConnection {
 
-    func getFreelaDetail() -> [FreelaDetail] {
-        return connection.getFreelaDetail()
+    func getFreelaDetail(completion: (([FreelaDetail]) -> ())?){
+        return connection.getFreelaDetail(completion: completion)
     }
     
     func update(object: FreelaDetail, response: (() -> Void)?) {

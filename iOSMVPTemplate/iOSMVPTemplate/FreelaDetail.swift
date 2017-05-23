@@ -62,6 +62,10 @@ struct FreelaDetail {
                             contact: Profile.mock(),
                             createdDate: freela.createdDate)
     }
+    
+    var freela: Freela {
+        return Freela(id: id, title: title, description: description, type: type, createdDate: createdDate)
+    }
 }
 
 extension FreelaDetail: CellApresentable {
