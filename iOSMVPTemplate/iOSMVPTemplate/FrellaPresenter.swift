@@ -6,13 +6,60 @@
 //  Copyright © 2017 Tulio Bazan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Firebase
 
 class FrellaPresenter: ContextTableViewPresenter {
 
     override func update() {
         // NOTE: Format the response and pass the result back to the View Controller
         loadFreela()
+    }
+    
+    override func addItem() {
+        let alert = UIAlertController(title: "New Freela",
+                                      message: "Add a Freela",
+                                      preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+            // 1
+            guard let textFieldTitle = alert.textFields?[0],
+                let title = textFieldTitle.text,
+                let textFieldDescription = alert.textFields?[1],
+                let description = textFieldDescription.text,
+                let textFieldType = alert.textFields?[2],
+                let type = FreelaType(rawValue: textFieldType.text ?? "") else { return }
+            
+            // 2
+            let item = FreelaDetail(id: nil, title: title, description: description, type: type, contact: nil, createdDate: nil)
+            // 3
+            let itemRef = FIRDatabase.database().reference(withPath: "Freela").child("\(item.id?.intValue)")
+            
+            // 4
+            itemRef.setValue(item.toAnyObject())
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .default)
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Title"
+        })
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Description"
+        })
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Type"
+        })
+        
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        if let view = view as? ContextTableViewController {
+            view.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     func loadFreela() {

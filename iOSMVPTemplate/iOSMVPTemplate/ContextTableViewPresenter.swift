@@ -11,6 +11,7 @@ import UIKit
 
 protocol ContextTableViewViewPresenter {
     func update()
+    func addItem()
 }
 
 class ContextTableViewPresenter:  NSObject,ContextTableViewViewPresenter{
@@ -27,6 +28,10 @@ class ContextTableViewPresenter:  NSObject,ContextTableViewViewPresenter{
     // MARK: Presentation logic
   
     func update() {
+    // NOTE: Format the response and pass the result back to the View Controller
+    }
+    
+    func addItem() {
     // NOTE: Format the response and pass the result back to the View Controller
     }
 }

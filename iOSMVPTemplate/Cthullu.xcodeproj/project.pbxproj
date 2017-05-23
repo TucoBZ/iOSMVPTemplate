@@ -21,6 +21,7 @@
 		651F5F381ECBB96100A0AD34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 651F5F371ECBB96100A0AD34 /* GoogleService-Info.plist */; };
 		651F5F3C1ECBBFD100A0AD34 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F5F3B1ECBBFD100A0AD34 /* Factory.swift */; };
 		651F5F3E1ECBC18300A0AD34 /* FirebaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F5F3D1ECBC18300A0AD34 /* FirebaseConnection.swift */; };
+		651F5F411ED4DE3A00A0AD34 /* String+Cthullu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F5F401ED4DE3A00A0AD34 /* String+Cthullu.swift */; };
 		652C36621E8DBBD000A32FF4 /* FreelaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */; };
 		652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */; };
 		652C366A1E8DC8FF00A32FF4 /* GenericTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */; };
@@ -73,6 +74,8 @@
 		651F5F371ECBB96100A0AD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		651F5F3B1ECBBFD100A0AD34 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		651F5F3D1ECBC18300A0AD34 /* FirebaseConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConnection.swift; sourceTree = "<group>"; };
+		651F5F3F1ED4DE1A00A0AD34 /* Cthullu-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cthullu-bridging-Header.h"; sourceTree = "<group>"; };
+		651F5F401ED4DE3A00A0AD34 /* String+Cthullu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Cthullu.swift"; sourceTree = "<group>"; };
 		652C36611E8DBBD000A32FF4 /* FreelaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreelaTableViewCell.xib; sourceTree = "<group>"; };
 		652C36631E8DBBEC00A32FF4 /* FreelaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreelaTableViewCell.swift; sourceTree = "<group>"; };
 		652C36681E8DC8FF00A32FF4 /* GenericTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTablePresenter.swift; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				39DE5CD81E414AE900056A24 /* Assets.xcassets */,
 				39DE5CDA1E414AE900056A24 /* LaunchScreen.storyboard */,
 				39DE5CDD1E414AE900056A24 /* Info.plist */,
+				651F5F3F1ED4DE1A00A0AD34 /* Cthullu-bridging-Header.h */,
 			);
 			name = Cthullu;
 			path = iOSMVPTemplate;
@@ -230,6 +234,7 @@
 		652C36671E8DC7F800A32FF4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				651F5F401ED4DE3A00A0AD34 /* String+Cthullu.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F6F17A1EB956CD00A7CAA8 /* DetailFreelaPresenter.swift in Sources */,
+				651F5F411ED4DE3A00A0AD34 /* String+Cthullu.swift in Sources */,
 				652C366B1E8DC8FF00A32FF4 /* GenericTableView.swift in Sources */,
 				652C36641E8DBBEC00A32FF4 /* FreelaTableViewCell.swift in Sources */,
 				655F0AB31EC29F31001D518F /* jobIconView.swift in Sources */,
@@ -692,6 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSMVPTemplate/Cthullu-bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -708,6 +715,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSMVPTemplate/Cthullu-bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -804,6 +812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tutululu.freela;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSMVPTemplate/Cthullu-bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Homolog;
