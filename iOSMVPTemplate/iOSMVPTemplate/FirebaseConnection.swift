@@ -35,16 +35,30 @@ class FirebaseConnection : NSObject, FactoryConnection {
     
     }
     
-    func getProfile() -> [Profile] {
-        return []
-    }
+//    func getProfile() -> [Profile] {
+//        return []
+//    }
+//    
+//    func update(object: Profile, response: (() -> Void)?) {
+//    
+//    }
     
-    func update(object: Profile, response: (() -> Void)?) {
-    
-    }
-    
-    func getFreelancer() -> [Freelancer] {
-        return []
+    func getFreelancer(completion: (([Freelancer]) -> ())?) {
+        let ref = FIRDatabase.database().reference(withPath: "Freelancer")
+        //let frellaRef = ref.child("Frella")
+        ref.observe(.value, with: { snapshot in
+            
+            var freelaDetails: [Freelancer] = []
+            
+            for item in snapshot.children {
+                if let firdata = item as? FIRDataSnapshot {
+                    let freela = Freelancer(snapshot: firdata)
+                    freelaDetails.append(freela)
+                }
+            }
+            
+            completion?(freelaDetails)
+        })
     }
     
     func update(object: Freelancer, response: (() -> Void)?) {

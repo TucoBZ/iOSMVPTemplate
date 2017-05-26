@@ -57,6 +57,22 @@ extension GenericViewController : Presentable {
     func present(url: URL) {
         UIApplication.shared.openURL(url)
     }
+    
+    func presentAlert(title: String, message: String) {
+        let alertOkButtonText = "Ok"
+        
+        if #available(iOS 8, *) {
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let actionOk = UIAlertAction(title: alertOkButtonText,
+                                         style: .default,
+                                         handler: nil)
+            alertController.addAction(actionOk)
+        }
+        else {
+            let alertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: nil, otherButtonTitles: alertOkButtonText)
+            alertView.show()
+        }
+    }
 }
 
 extension GenericViewController : GenericView {

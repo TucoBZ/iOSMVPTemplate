@@ -14,11 +14,13 @@ struct FreelaDetail {
     var title: String?
     var description: String?
     var type: FreelaType = .development
-    var contact: Profile?
+    var name: String?
+    var email: String?
+    var phone: String?
     var createdDate: Date = Date()
     let ref: FIRDatabaseReference?
     
-    init(id: NSNumber?, title: String?, description: String?, type: FreelaType, contact: Profile?, createdDate: Date?) {
+    init(id: NSNumber?, title: String?, description: String?, type: FreelaType, name: String?, email: String?, phone: String?, createdDate: Date?) {
         let createdDate = createdDate ?? Date()
         self.createdDate = createdDate
         
@@ -27,7 +29,9 @@ struct FreelaDetail {
     
         self.title = title
         self.description = description
-        //self.contact = contact
+        self.name = name
+        self.email = email
+        self.phone = phone
         self.type = type
         self.ref = nil
     }
@@ -39,6 +43,9 @@ struct FreelaDetail {
         title = snapshotValue["title"] as? String
         description = snapshotValue["description"] as? String
         type = FreelaType(rawValue: snapshotValue["type"] as! String) ?? .development
+        name = snapshotValue["name"] as? String
+        email = snapshotValue["email"] as? String
+        phone = snapshotValue["phone"] as? String
         createdDate = Date.init(timeIntervalSince1970: TimeInterval((snapshotValue["createdDate"] as! NSNumber).intValue))
         
         ref = snapshot.ref
@@ -50,18 +57,21 @@ struct FreelaDetail {
             "title": title ?? "",
             "description": description ?? "",
             "type": type.rawValue,
+            "name":  name ?? "",
+            "email": email ?? "",
+            "phone": phone ?? "",
             "createdDate": createdDate.timeIntervalSince1970
         ]
     }
 
-    static func mock(freela: Freela) -> FreelaDetail{
-        return FreelaDetail(id: freela.id,
-                            title: freela.title,
-                            description: freela.description,
-                            type: freela.type,
-                            contact: Profile.mock(),
-                            createdDate: freela.createdDate)
-    }
+//    static func mock(freela: Freela) -> FreelaDetail{
+//        return FreelaDetail(id: freela.id,
+//                            title: freela.title,
+//                            description: freela.description,
+//                            type: freela.type,
+//                            contact: "ahssaghjdgjhasgd12e7126e786",
+//                            createdDate: freela.createdDate)
+//    }
     
     var freela: Freela {
         return Freela(id: id, title: title, description: description, type: type, createdDate: createdDate)

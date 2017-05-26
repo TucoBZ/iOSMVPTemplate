@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import FirebaseAuth
 import Firebase
 
 class FrellaPresenter: ContextTableViewPresenter {
 
     var textFieldType: UITextField?
+    
+    override func logout() {
+        try! FIRAuth.auth()!.signOut()
+        if let view = view as? ContextTableViewController {
+            let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "loginViewController") as UIViewController
+            Factory.instance.loggedFreelancer = nil
+            
+            view.present(vc, animated: false, completion: nil)
+           
+        }
+        
+    }
     
     override func update() {
         // NOTE: Format the response and pass the result back to the View Controller
@@ -30,10 +43,14 @@ class FrellaPresenter: ContextTableViewPresenter {
                 let textFieldDescription = alert.textFields?[1],
                 let description = textFieldDescription.text,
                 let textFieldType = alert.textFields?[2],
-                let type = FreelaType(rawValue: textFieldType.text ?? "") else { return }
+                let type = FreelaType(rawValue: textFieldType.text ?? ""),
+                let freelancer = Factory.instance.loggedFreelancer else { return }
+            
             
             // 2
-            let item = FreelaDetail(id: nil, title: title, description: description, type: type, contact: nil, createdDate: nil)
+            let item = FreelaDetail(id: nil, title: title,
+                                    description: description, type: type,
+                                    name: freelancer.name, email: freelancer.email, phone: freelancer.phone, createdDate: nil)
             // 3
             let itemRef = FIRDatabase.database().reference(withPath: "Freela").child("\(item.id?.intValue)")
             
@@ -68,7 +85,6 @@ class FrellaPresenter: ContextTableViewPresenter {
         if let view = view as? ContextTableViewController {
             view.present(alert, animated: true, completion: nil)
         }
-        
     }
     
     func loadFreela() {

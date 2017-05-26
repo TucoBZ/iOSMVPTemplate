@@ -8,20 +8,39 @@
 
 import UIKit
 
-struct Profile {
-    var id: NSNumber?
-    var name: String?
-    var address: Address?
-    var email: String?
-    var phone: Phone?
-    var birthday: Date?
-    
-    static func mock() -> Profile {
-        return Profile(id: 123,
-                       name: "Jorge Lucas",
-                       address: Address.mock(),
-                       email: "jlucas@gmail.com",
-                       phone: Phone.mock(),
-                       birthday: Date())
-    }
-}
+//struct Profile {
+//    var name: String?
+//    var email: String?
+//    var phone: String?
+//    
+//    init(name: String, email: String, phone: String) {
+//        self.name = name
+//        self.email = email
+//        self.phone = phone
+//    }
+//    
+//    
+//    init(dictnary: [String: AnyObject]?) {
+//        
+//        guard let dictnary = dictnary else {return}
+//        
+//        name = dictnary["name"] as? String
+//        email = dictnary["email"] as? String
+//        phone = dictnary["phone"] as? String
+//        
+//    }
+//    
+//    func toAnyObject() -> AnyObject {
+//        return [
+//            "name":  name ?? "",
+//            "email": email ?? "",
+//            "phone": phone ?? "",
+//        ]
+//    }
+//    
+//    static func mock() -> Profile {
+//        return Profile(name: "Jorge Lucas",
+//                       email: "jlucas@gmail.com",
+//                       phone: "55 19 999999999")
+//    }
+//}

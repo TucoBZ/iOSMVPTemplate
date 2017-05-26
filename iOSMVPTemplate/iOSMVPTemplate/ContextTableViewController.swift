@@ -98,6 +98,10 @@ class ContextTableViewController: GenericViewController {
     @IBAction func addFreela(_ sender: UIBarButtonItem) {
         presenter?.addItem()
     }
+    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        presenter?.logout()
+    }
 }
 
 

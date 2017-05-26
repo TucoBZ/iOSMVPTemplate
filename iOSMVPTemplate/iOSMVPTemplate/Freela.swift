@@ -85,11 +85,20 @@ extension Freela: CellApresentable {
             
             if let presenter = viewController.presenter as? DetailFreelaPresenter {
                 
+                Factory.instance.getFreelaDetail(completion: { freelas in
+                    
+                    for freela in freelas {
+                        if freela.id == self.id {
+                            presenter.freela = freela
+                            completion?(viewController)
+                        }
+                    }
+                })
                 
-                presenter.freela = FreelaDetail.mock(freela: self)
+                //presenter.freela = FreelaDetail.mock(freela: self)
             }
         
-            completion?(viewController)
+            
         }
     }
 }

@@ -12,6 +12,7 @@ import UIKit
 protocol ContextTableViewViewPresenter {
     func update()
     func addItem()
+    func logout()
 }
 
 class ContextTableViewPresenter:  NSObject,ContextTableViewViewPresenter{
@@ -33,6 +34,10 @@ class ContextTableViewPresenter:  NSObject,ContextTableViewViewPresenter{
     
     func addItem() {
     // NOTE: Format the response and pass the result back to the View Controller
+    }
+    
+    func logout() {
+        
     }
 }
 

@@ -35,9 +35,12 @@ class FreelaDetailTableViewCell: UITableViewCell {
             descriptionLabel.text = freela.description
             jobTypeLabel.text = freela.type.description
             imageIcon.image = freela.type.icon
-            contactNameLabel.text = freela.contact?.name
-            phoneLabel.text = freela.contact?.phone?.detailString
-            emailLabel.text = freela.contact?.email
+            
+            
+            
+            contactNameLabel.text = freela.name
+            phoneLabel.text = freela.phone
+            emailLabel.text = freela.email
         }
     }
 }

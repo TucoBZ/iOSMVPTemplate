@@ -12,15 +12,17 @@ protocol FactoryConnection {
     func getFreelaDetail(completion: (([FreelaDetail]) -> ())?)
     func update(object: FreelaDetail, response: (() -> Void)?)
 
-    func getProfile() -> [Profile]
-    func update(object: Profile, response: (() -> Void)?)
+//    func getProfile() -> [Profile]
+//    func update(object: Profile, response: (() -> Void)?)
     
-    func getFreelancer() -> [Freelancer]
+    func getFreelancer(completion: (([Freelancer]) -> ())?)
     func update(object: Freelancer, response: (() -> Void)?)
 }
 
 public class Factory : NSObject {
     static let instance = Factory()
+    
+    var loggedFreelancer: Freelancer?
     
     fileprivate let connection : FactoryConnection = FirebaseConnection()
 
@@ -36,16 +38,16 @@ extension Factory: FactoryConnection {
         connection.update(object: object, response: response)
     }
     
-    func getProfile() -> [Profile] {
-        return connection.getProfile()
-    }
+//    func getProfile() -> [Profile] {
+//        return connection.getProfile()
+//    }
+//    
+//    func update(object: Profile, response: (() -> Void)?) {
+//        connection.update(object: object, response: response)
+//    }
     
-    func update(object: Profile, response: (() -> Void)?) {
-        connection.update(object: object, response: response)
-    }
-    
-    func getFreelancer() -> [Freelancer] {
-        return connection.getFreelancer()
+     func getFreelancer(completion: (([Freelancer]) -> ())?) {
+        return connection.getFreelancer(completion: completion)
     }
     
     func update(object: Freelancer, response: (() -> Void)?) {
