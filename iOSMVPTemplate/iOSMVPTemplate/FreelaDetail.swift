@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 struct FreelaDetail {
-    var id: NSNumber?
+    var id: String?
     var title: String?
     var description: String?
     var type: FreelaType = .development
@@ -20,12 +20,12 @@ struct FreelaDetail {
     var createdDate: Date = Date()
     let ref: FIRDatabaseReference?
     
-    init(id: NSNumber?, title: String?, description: String?, type: FreelaType, name: String?, email: String?, phone: String?, createdDate: Date?) {
+    init(id: String?, title: String?, description: String?, type: FreelaType, name: String?, email: String?, phone: String?, createdDate: Date?) {
         let createdDate = createdDate ?? Date()
         self.createdDate = createdDate
         
-        let id = id ?? NSNumber(value: createdDate.timeIntervalSince1970)
-        self.id = id
+        let newid =  id ?? "\(Int(createdDate.timeIntervalSince1970))"
+        self.id = newid
     
         self.title = title
         self.description = description
@@ -37,7 +37,7 @@ struct FreelaDetail {
     }
     
     init(snapshot: FIRDataSnapshot) {
-        id = NSNumber(value: Int(snapshot.key) ?? 0)
+        id = snapshot.key as? String
         let snapshotValue = snapshot.value as! [String: AnyObject]
         
         title = snapshotValue["title"] as? String
@@ -53,7 +53,7 @@ struct FreelaDetail {
     
     func toAnyObject() -> Any {
         return [
-            "id":  id?.intValue ?? 0,
+            "id":  id ?? "",
             "title": title ?? "",
             "description": description ?? "",
             "type": type.rawValue,

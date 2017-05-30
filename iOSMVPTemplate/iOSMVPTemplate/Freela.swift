@@ -57,7 +57,7 @@ enum FreelaType: String {
 }
 
 struct Freela {
-    var id: NSNumber?
+    var id: String?
     var title: String?
     var description: String?
     var type: FreelaType = .development
@@ -91,6 +91,7 @@ extension Freela: CellApresentable {
                         if freela.id == self.id {
                             presenter.freela = freela
                             completion?(viewController)
+                            return
                         }
                     }
                 })

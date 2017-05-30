@@ -39,6 +39,7 @@ class LoginPresenter:  NSObject,LoginViewPresenter{
                         if freelancer.id == user.uid {
                             Factory.instance.loggedFreelancer = freelancer
                             self.view?.result(login: true)
+                            return
                         }
                     }
                     
